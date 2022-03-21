@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="script.js" charset="utf-8"></script>
+    <title>Pi Trainer</title>
+  </head>
+  <body>
+    <h1>Pi Memorization Trainer</h1>
+    <div class="params">
+      <h3>How many digits do you have memorized?</h3>
+      <input type="number" id="amtStart" value="25">
+      <input type="button" id="starter" value="Start!" onclick="start()">
+    </div>
+
+    <div class="cal-buttons">
+      <h3>Guess:</h3>
+
+      <input type="text" name="" id="answer" value="" oninput="applytxt()"><br>
+      <input type="button" id="7" value="7" onclick="apply7()">
+      <input type="button" id="8" value="8" onclick="apply8()">
+      <input type="button" id="9" value="9" onclick="apply9()"><br>
+      <input type="button" id="4" value="4" onclick="apply4()">
+      <input type="button" id="5" value="5" onclick="apply5()">
+      <input type="button" id="6" value="6" onclick="apply6()"><br>
+      <input type="button" id="1" value="1" onclick="apply1()">
+      <input type="button" id="2" value="2" onclick="apply2()">
+      <input type="button" id="3" value="3" onclick="apply3()"><br>
+      <input type="button" id="0" value="0" onclick="apply0()">
+      <input type="button" id="." value="." onclick="applydot()">
+    </div>
+    <p id="output">
+    </p>
+  </body>
+</html>
