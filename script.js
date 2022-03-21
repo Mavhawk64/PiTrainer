@@ -84,8 +84,8 @@ function simonSays() {
   var input = document.getElementById("output").innerHTML.trim().length;
   document.getElementById("output").innerHTML = "";
   var amtStart = parseInt(document.getElementById("amtStart").value);
-  var end = input > amtStart ? input : amtStart;
-  alert(pi.substring(0,end+1)); //1 + end because '3.' usually isn't counted
+  var end = input > amtStart ? input-1 : amtStart;
+  alert(pi.substring(0,end+2)); //1 + end because '3.' usually isn't counted
 }
 
 
